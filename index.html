@@ -1,0 +1,115 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zachary Carreon Portfolio</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Varela+Round" rel="stylesheet">
+  </head>
+  <body>
+    <!--HEADER-->
+    <header id="mainHeader" class="grid-x grid-padding-x">
+      <h2 class="hide">Main Header</h2>
+      <nav class="small-12 large-6 large-offset-6 cell">
+        <h2 class="hide">Main Navigation</h2>
+        <div class="title-bar" data-responsive-toggle="mainMenu" data-hide-for="large">
+          <button class="menu-icon float-right" type="button" data-toggle></button>
+        </div>
+        <div id="mainMenu">
+          <ul id="mainNav">
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#illCon">Illustration & Design</a></li>
+            <li><a href="#mainVideo">Video</a></li>
+            <li><a href="#mainContact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+
+    <!--Intro Screen-->
+    <div id="mainIntro" class="grid-x grid-padding-x">
+      <div class="cell">
+        <section>
+          <img src="images/logo.svg" alt="logo" id="logo">
+          <h2>Zachary Carreon</h2>
+          <h3>Artist - Illustrator - Designer</h3>
+        </section>
+      </div>
+    </div>
+
+    <!--BIO-->
+    <div id="mainBio" class="grid-x grid-padding-x">
+      <div class="small-12 medium-7 large-7 cell">
+          <h2>Bio</h2>
+          <p>Hi! My name is Zachary Carreon. I am an artist, illustrator and designer. I'm proficient with Adobe Photoshop, Illustrator, InDesign and After Effects. I'm experienced with traditional art skills, such as drawing and painting as well. I also have coding experience with HTML5, CSS, Javascript and SQL.</p>
+      </div>
+    </div>
+
+    <!--ILlustration & Design-->
+    <div id="mainContent" class="grid-x grid-padding-x">
+      <div id="illCon" class="small-12 medium-6 large-6 cell">
+          <h2>Illustrations</h2>
+      </div>
+      <div id="desCon" class="small-12 medium-6 large-6 cell">
+          <h2>Designs</h2>
+      </div>
+    </div>
+
+    <!--Video-->
+    <div id="mainVideo" class="grid-x grid-padding-x">
+      <div class="small-6 small-offset-3 cell">
+        <h2>Demo Reel</h2>
+      </div>
+        <div class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 cell">
+            <video controls id="videoPlayer" class="cell">
+                <source src="video/demo-reel.mp4" type="video/mp4">
+                <source src="video/demo-reel.webm" type="video/webm">
+                <source src="video/demo-reel.ogv" type="video/ogv">
+                <h2>Video not supported by browser.</h2>
+            </video>
+        </div>
+    </div>
+
+    <!--Contact Form-->
+    <div id="mainContact" class="grid-x grid-padding-x">
+      <div class="small-6 small-offset-3 cell">
+        <h2>Contact Me!</h2>
+      </div>
+      <div class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 cell">
+        <form action="contact.php" method="post" id="contactForm">
+            <input type="text" placeholder="Name*" required name="name">
+            <input type="email" placeholder="Email*" required name="email">
+            <input type="text" placeholder="Subject*" required name="about">
+            <textarea placeholder="Message*" required name="message"></textarea>
+            <input type='text' name="street" class='hide'>
+            <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <footer id="mainFooter" class="grid-x grid-padding-x">
+        <div>
+          <nav class="small-12 large-12 cell">
+            <h2 class="hide">Footer Navigation</h2>
+            <a href="#mainHeader" id="topButton">Back to Top</a>
+            <ul id="footerNav">
+              <li><a href="#bio">Bio</a></li>
+              <li><a href="#illCon">Illustration & Design</a></li>
+              <li><a href="#mainVideo">Video</a></li>
+              <li><a href="#mainContact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+    </footer>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/designLB.js"></script>
+  </body>
+</html>
