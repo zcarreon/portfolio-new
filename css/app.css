@@ -232,6 +232,59 @@ a:hover {
   color: #fff;
   text-decoration: underline;
 }
+
+/* Lightbox */
+.lightbox {
+  position : absolute;
+  top: 0;
+  left: 0;
+  width : 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, .75);
+  color: white;
+  z-index: 500;
+}
+
+.close-lightbox {
+  float : right;
+  text-decoration: none;
+  font-family: "Varela Round", sans-serif;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 2em;
+  cursor : pointer;
+}
+
+.close-lightbox:hover {
+  color: #ff9b9b;
+}
+
+.design-lightbox-img {
+  display: block;
+  height : 25%;
+  width: auto;
+  margin: 0 auto;
+  margin-top : 70px;
+  margin-bottom: 25px;
+}
+
+.design-heading {
+  font-family : 'Pacifico', cursive;
+  font-size: 1.3em;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.design-desc {
+  font-family : 'Varela Round', sans-serif;
+  font-size : .85em;
+  margin: 0 auto;
+  width: 85%;
+  border-top: 1px solid #fff;
+}
+
 /* Media Queries */
 @media screen and (min-width: 26.625em) {
   /*Bio*/
@@ -250,6 +303,10 @@ a:hover {
   #mainVideo h2 {font-size: 2em;}
   /* Contact Form */
   #mainContact h2 {font-size: 2em;}
+  /* Lightbox */
+  .design-lightbox-img {height: 35%;}
+  .design-heading {font-size: 2em;}
+  .design-desc { font-size: 1em; padding-top: 10px;}
 }
 
 @media screen and (min-width: 64em) {
@@ -278,4 +335,8 @@ a:hover {
   #mainFooter li {display: inline; margin-left: 15px; margin-right: 15px; font-size: 1.25em;}
   #mainFooter li a {display: inline; border-top: none; font-size: 1em; color: #fff; background: none;}
   #mainFooter li a:hover {color: #fff; border-bottom: 1px solid #fff;}
+  /* Lightbox */
+  .design-lightbox-img {height: 50%; margin-bottom: 50px;}
+  .design-heading {font-size: 2.5em;}
+  .design-desc {font-size: 1.25em;}
 }
