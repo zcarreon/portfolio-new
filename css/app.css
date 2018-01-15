@@ -282,7 +282,39 @@ a:hover {
   font-size : .85em;
   margin: 0 auto;
   width: 85%;
-  border-top: 1px solid #fff;
+}
+
+/* Illustration Gallery */
+#illustGallery {
+  max-width: 300px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: -400px;
+}
+
+.illustSlides {
+  display: none;
+  clear: both;
+}
+
+.next {
+  cursor: pointer;
+  float: right;
+  font-family: "Varela Round", sans-serif;
+  font-size: 3em;
+}
+
+.prev {
+  cursor: pointer;
+  float: left;
+  font-family: "Varela Round", sans-serif;
+  font-size: 3em;
+}
+
+#illustGallery h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 10px;
 }
 
 /* Media Queries */
